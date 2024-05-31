@@ -1,0 +1,447 @@
+:root{
+    /* Colors */
+
+   /* Primary */
+    
+    --Dark-Blue: hsl(233, 26%, 24%);
+    --Lime-Green: rgb(51, 211, 94);
+    --Bright-Cyan: rgb(42, 182, 217);
+    
+    /* Neutral */
+    
+    --Grayish-Blue: hsl(233, 8%, 62%);
+    --Light-Grayish-Blue: hsl(220, 16%, 96%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+    --White: hsl(0, 0%, 100%);
+    
+   /* Typography */
+    
+    /* Body Copy */
+    
+    --Font-size: 1.1rem;
+    
+    /* Font */
+    
+    --Family: "Public Sans", sans-serif;
+}
+
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--Grayish-Blue);
+}
+img{
+    display: block;
+    width: 100%;
+}
+body{
+    font-family: var(--Family);
+    display: flex;
+    flex-direction: column;
+    overflow-x: clip;
+    
+}
+p{
+    color: var(--Grayish-Blue);
+    line-height: 1.7em;
+}
+nav{
+    padding: 1rem 6rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+}
+#logo{
+    width: 140px;
+}
+nav ul{
+    flex: 1;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    color: var(--Grayish-Blue);
+    align-items: center;
+}
+nav ul li{
+    padding-bottom: 0.5rem;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+nav ul li:hover{
+    border-bottom: 2px solid var(--Lime-Green);
+    transition: 0.2s;
+}
+.btn{
+    width: 163px;
+    background: linear-gradient(95deg, var(--Lime-Green) 0%, var(--Bright-Cyan)100%);
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    padding: 0.9em 0;
+    color: var(--White);
+    cursor: pointer;
+    font-weight: 600;
+}
+.btn:hover{
+   background: linear-gradient(95deg, rgba(51, 211, 94,0.6) 0%, rgba(42, 182, 217, 0.6)100%); 
+}
+main{
+    padding: 0rem 6rem;
+    display: flex;
+    background-image: url(./images/bg-intro-desktop.svg);
+    background-position: left 570px bottom -210px;
+    background-repeat: no-repeat;
+}
+
+.introduction{
+    flex: 1;
+}
+.mockups-section{
+    min-width: 500px;
+    overflow-y: hidden; 
+    height: 100%;
+    height: 550px;
+    position: relative;
+    right: -6rem;
+}
+.mockups-section img{
+    position: relative;
+    bottom: 4rem;   
+    height: 100%;
+    width: 100%;
+}
+main h1{
+    color: var(--Dark-Blue);
+    font-weight: 400;
+    font-size: 3.3rem;
+    margin: 4rem 0 1rem;
+}
+main p{
+    margin-bottom: 1.5rem;
+}
+.services{
+    background-color: var(--Light-Grayish-Blue);
+    padding: 1rem 6rem;
+}
+.services h2{
+    font-weight: 400;
+    color: var(--Dark-Blue);
+    font-size: 2.2rem;
+}
+.services p{
+    margin: 1.5rem 0;
+    width: 60%;
+}
+.services-cards{
+    display: flex;
+    gap: 40px;
+}
+.card{
+    flex: 1;
+    margin: 3rem 0 4rem;
+}
+.card img{
+    width: 72px;
+    height: 72px;
+}
+.card h3{
+    font-weight: 450;
+    margin: 1rem 0;
+    color: var(--Dark-Blue);
+}
+.card p{
+    font-size: 0.85rem;
+}
+.latest-articles{
+    padding: 1rem 6rem;
+}
+.latest-articles h2{
+    font-weight: 400;
+    color: var(--Dark-Blue);
+    font-size: 2.1rem;
+    margin-bottom: -0.5rem;
+}
+.latest-articles-cards{
+    display: flex;
+    gap: 25px;
+}
+.article-img{
+    width: 100% !important;
+    height: 200px !important;
+    object-fit: cover;
+}
+.card h5{
+    color: var(--Grayish-Blue);
+    font-weight: 400;
+    margin: 1.5rem 0;
+}
+.title:hover{
+    color: var(--Lime-Green);
+    cursor: pointer;
+}
+.description{
+    padding-left: 1rem;
+}
+footer{
+    padding: 3rem 6rem;
+    background-color: var(--Dark-Blue);
+    display: flex;
+    gap: 20px;
+    color: var(--White);
+    align-items: center;
+}
+footer div{
+    flex-basis: 200px;
+    height: 100px;
+}
+.footer-logo-section{
+    flex-basis: 260px;
+}
+#footer-logo {
+    color: var(--White);
+}
+.social-links{
+    margin-top: 45px;
+    height: 20px !important;
+    display: flex;
+    gap: 13px;
+}
+.social-links:hover{
+    cursor: pointer;
+}
+.social-links svg:hover path{
+    fill: var(--Lime-Green);
+}
+.links{
+    font-size: 1rem;
+    font-weight: 200;
+} 
+.links li{
+    margin-bottom: 1rem;
+}
+.links li:hover a{
+    color: var(--Lime-Green);
+    cursor: pointer;
+}
+#footer-call-to-action{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    color: var(--Light-Grayish-Blue);
+}
+#footer-call-to-action p{
+    margin-top: 1.5rem;
+}
+/* nav for mobile */
+.hamburger-btn{
+    cursor: pointer;
+    display: none;
+}
+.nav-mobile{
+    position: absolute;
+    background-color: var(--White);
+    width: 300px;
+    top: 70px;
+    right: 1rem;
+    padding: 1.2rem 0 0;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.3);
+    z-index: 2;
+    display: none;
+}
+.nav-mobile ul{
+    display: flex;
+    flex-direction: column;
+    height: fit-content !important;
+    align-items: center;
+    gap: 0!important;
+}
+.nav-mobile ul li {
+    height: 30px;
+    margin-bottom: 0.9rem;
+}
+.active{
+    display: block;
+}
+@media(max-width:960px) and (min-width:690px){
+    nav{
+        padding: 1rem 1rem;
+    }
+    main{
+        padding: 0rem 1rem;
+        background-position: left 350px bottom -100px;
+    }
+    main h1{
+        margin: 1rem 0 1rem;
+    }
+    .mockups-section{
+        right: -1rem;
+    }
+    .services{
+        padding: 1rem 1rem;
+        text-align: center;
+    }
+    .services p{
+        width: 100%;
+    }
+    .services-cards{
+        padding: 1rem 1rem;
+        flex-direction: column;
+    }
+    
+    .services-cards .card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 0 0.5rem;
+    }
+    .latest-articles{
+        padding: 1rem 1rem;
+        text-align: center;
+    }
+    .latest-articles-cards{
+        flex-direction: column;
+    }
+    .latest-articles .card{
+        margin-bottom: 1rem;
+    }
+    footer{
+        padding: 3rem 1rem;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+    footer div{
+        flex-basis: unset;
+    }
+    .footer-logo-section{
+        flex-basis: unset;
+    }
+    .social-links{
+        margin-top: 30px;
+    }
+    .links ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #links-section2{
+        margin-top: -20px;
+    }
+    #footer-call-to-action{
+        flex: unset;
+        align-items: center;
+    }
+}
+@media(max-width:690px){
+    .hamburger-btn{
+        display: inline-block;
+        
+    }
+    .bar{
+        display: block;
+        width: 30px;
+        height: 2px;
+        margin: 3px auto;
+        background-color: var(--Grayish-Blue);
+    }
+    .hamburger-btn.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger-btn.active .bar:nth-child(1){
+        transform: translateY(5px) rotate(45deg);
+    }
+    .hamburger-btn.active .bar:nth-child(3){
+        transform: translateY(-5px) rotate(-45deg);
+    }
+    .hidden{
+        display: none;
+    }
+    main{
+        padding: 0 1rem;
+        flex-direction: column-reverse;
+        align-items: center;
+        background-position: left -100px bottom 430px;
+    }
+    .mockups-section{
+        position: static;
+        right: unset;
+        min-width: 350px;
+        max-width: 90%;
+    }
+    main h1{
+        margin: 0rem 0 1rem;
+    }
+    .introduction{
+        text-align: center;
+        margin-bottom: 8rem;
+    }
+    nav{
+        padding: 1rem 1rem;
+    }
+    .services{
+        padding: 1rem 1rem;
+        text-align: center;
+    }
+    .services p{
+        width: 100%;
+    }
+    .services-cards{
+        padding: 1rem 1rem;
+        flex-direction: column;
+    }
+    
+    .services-cards .card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 0 0.5rem;
+    }
+    .latest-articles{
+        padding: 1rem 1rem;
+        text-align: center;
+    }
+    .latest-articles-cards{
+        flex-direction: column;
+    }
+    .latest-articles .card{
+        margin-bottom: 1rem;
+    }
+    footer{
+        padding: 3rem 1rem;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+    footer div{
+        flex-basis: unset;
+    }
+    .footer-logo-section{
+        flex-basis: unset;
+    }
+    .social-links{
+        margin-top: 30px;
+    }
+    .links ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #links-section2{
+        margin-top: -20px;
+    }
+    #footer-call-to-action{
+        flex: unset;
+        align-items: center;
+    }
+}
